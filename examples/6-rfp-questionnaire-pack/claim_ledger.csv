@@ -1,0 +1,61 @@
+question_id,claim,has_source,verdict
+Q01,[Information Security Policy] Confirm: All data in transit i,yes,PASS
+Q02,[Information Security Policy] Confirm: Data at rest is encry,yes,PASS
+Q03,[Information Security Policy] Confirm: We enforce SSO with S,yes,PASS
+Q04,[Information Security Policy] Confirm: Multi-factor authenti,yes,PASS
+Q05,[Information Security Policy] Confirm: Secrets are stored in,yes,PASS
+Q06,[Information Security Policy] Confirm: We run quarterly thir,yes,PASS
+Q07,[Information Security Policy] Confirm: Vulnerabilities are t,yes,PASS
+Q08,[Information Security Policy] Confirm: Production access is ,yes,PASS
+Q09,[Information Security Policy] Confirm: We follow a documente,yes,PASS
+Q10,[Information Security Policy] Confirm: Endpoint disk encrypt,yes,PASS
+Q11,[Infrastructure & Availability] Confirm: Production runs in ,yes,PASS
+Q12,[Infrastructure & Availability] Confirm: We target 99.9% mon,yes,PASS
+Q13,[Infrastructure & Availability] Confirm: Backups are taken e,yes,PASS
+Q14,[Infrastructure & Availability] Confirm: Infrastructure is p,yes,PASS
+Q15,[Infrastructure & Availability] Confirm: We use a CDN with D,yes,PASS
+Q16,[Infrastructure & Availability] Confirm: Autoscaling is conf,yes,PASS
+Q17,[Infrastructure & Availability] Confirm: Database failover i,yes,PASS
+Q18,[Infrastructure & Availability] Confirm: All servers are pat,yes,PASS
+Q19,[Infrastructure & Availability] Confirm: Logs are centralize,yes,PASS
+Q20,[Infrastructure & Availability] Confirm: Capacity is reviewe,yes,PASS
+Q21,[Data Handling & Privacy] Confirm: Customer data is logicall,yes,PASS
+Q22,[Data Handling & Privacy] Confirm: We support data residency,yes,PASS
+Q23,[Data Handling & Privacy] Confirm: Personal data is deleted ,yes,PASS
+Q24,[Data Handling & Privacy] Confirm: We maintain a record of p,yes,PASS
+Q25,[Data Handling & Privacy] Confirm: Data subject access reque,yes,PASS
+Q26,[Data Handling & Privacy] Confirm: We do not sell customer d,yes,PASS
+Q27,[Data Handling & Privacy] Confirm: PII is masked in non-prod,yes,PASS
+Q28,[Data Handling & Privacy] Confirm: Data retention windows ar,yes,PASS
+Q29,[Data Handling & Privacy] Confirm: Encryption keys are rotat,yes,PASS
+Q30,[Data Handling & Privacy] Confirm: Customers can export thei,yes,PASS
+Q31,[Compliance & Certifications] Confirm: We hold a current SOC,yes,PASS
+Q32,[Compliance & Certifications] Confirm: We are ISO 27001 cert,yes,PASS
+Q33,[Compliance & Certifications] Confirm: Our SOC 2 report is a,yes,PASS
+Q34,[Compliance & Certifications] Confirm: We undergo an annual ,yes,PASS
+Q35,[Compliance & Certifications] Confirm: We maintain GDPR and ,yes,PASS
+Q36,[Compliance & Certifications] Confirm: A current subprocesso,yes,PASS
+Q37,[Compliance & Certifications] Confirm: Penetration-test summ,yes,PASS
+Q38,[Compliance & Certifications] Confirm: We map controls to th,yes,PASS
+Q39,[Business Continuity & IR] Confirm: We maintain a documented,yes,PASS
+Q40,[Business Continuity & IR] Confirm: Customers are notified o,yes,PASS
+Q41,[Business Continuity & IR] Confirm: Our RTO is 4 hours and o,yes,PASS
+Q42,[Business Continuity & IR] Confirm: We run an annual disaste,yes,PASS
+Q43,[Business Continuity & IR] Confirm: On-call coverage is 24/7,yes,PASS
+Q44,[Business Continuity & IR] Confirm: Post-incident reviews ar,yes,PASS
+Q45,[Business Continuity & IR] Confirm: Backups are stored in a ,yes,PASS
+Q46,[Business Continuity & IR] Confirm: We operate a public stat,yes,PASS
+Q47,[Access Control & HR] Confirm: Access follows least-privileg,yes,PASS
+Q48,[Access Control & HR] Confirm: Access is reviewed and recert,yes,PASS
+Q49,[Access Control & HR] Confirm: Employees complete security t,yes,PASS
+Q50,[Access Control & HR] Confirm: Background checks are perform,yes,PASS
+Q51,[Access Control & HR] Confirm: Access is revoked within 24 h,yes,PASS
+Q52,[Access Control & HR] Confirm: Privileged actions require a ,yes,PASS
+Q53,[Access Control & HR] Confirm: Contractors are subject to th,yes,PASS
+Q54,[Access Control & HR] Confirm: Shared accounts are prohibite,yes,PASS
+Q55,[Access Control & HR] Confirm: Session timeouts are enforced,yes,PASS
+Q56,[Access Control & HR] Confirm: We maintain an asset inventor,yes,PASS
+Q57,[Access Control & HR] Confirm: Just-in-time access is used f,yes,PASS
+Q58,[Access Control & HR] Confirm: All access changes are record,yes,PASS
+Q59,Are you FedRAMP authorized?,no,FAIL
+Q60,Do you carry a $10M cyber-insurance policy?,no,FAIL

@@ -1,0 +1,14 @@
+phase,ts,loop,file,event,detail
+phase1-uncoordinated,2026-05-02T01:00:00,loop-B-docs,src/api/router.ts,conflict,edited a file loop-A was mid-refactor on
+phase1-uncoordinated,2026-05-02T01:03:00,loop-A-refactor,src/api/router.ts,clobber,overwrote loop-B's doc-comment block
+phase1-uncoordinated,2026-05-02T01:06:00,loop-A-refactor,src/api/handlers.ts,conflict,merge conflict on shared import block
+phase1-uncoordinated,2026-05-02T01:09:00,loop-B-docs,README.md,conflict,both loops appended to the same section
+phase1-uncoordinated,2026-05-02T01:12:00,loop-B-docs,src/api/handlers.ts,clobber,reverted loop-A's extracted function
+phase1-uncoordinated,2026-05-02T01:15:00,loop-A-refactor,src/api/router.ts,revert,human reverted a bad auto-merge
+phase1-uncoordinated,2026-05-02T01:18:00,loop-A-refactor,src/api/types.ts,conflict,type rename collided with doc example
+phase1-uncoordinated,2026-05-02T01:21:00,loop-B-docs,src/api/types.ts,conflict,doc snippet referenced a renamed type
+phase1-uncoordinated,2026-05-02T01:24:00,loop-A-refactor,src/api/index.ts,conflict,export list edited by both loops
+phase2-coordinated,2026-05-02T02:30:00,loop-B-docs,src/api/router.ts,lock_denied,path locked by loop-A-refactor (lease held)
+phase2-coordinated,2026-05-02T02:33:00,loop-B-docs,src/api/router.ts,backoff,BACKOFF(30s) then retry after lease released
+phase2-coordinated,2026-05-02T02:36:00,loop-A-refactor,src/api/handlers.ts,lock_acquired,"lease acquired, ttl=120s"
+phase2-coordinated,2026-05-02T02:39:00,loop-B-docs,README.md,merge_queued,change queued; merged after loop-A landed

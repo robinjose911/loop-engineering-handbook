@@ -1,0 +1,9 @@
+{
+  "commits_in_range": 60,
+  "example": 4,
+  "fix_line_count": 1,
+  "repro_attempts": 5,
+  "repro_phase_share_pct": 68.2,
+  "title": "Reproduce-Before-You-Fix",
+  "total_usd": 6.6
+}

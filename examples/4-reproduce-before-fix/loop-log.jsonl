@@ -1,0 +1,13 @@
+{"cost_usd":0.9,"cumulative_usd":0.9,"gate_open":false,"note":"repro attempt 1: trying to make the bug reliably red","phase":"reproduce","status":"repro_attempt","ts":"2026-05-26T10:00:00","turn":1}
+{"cost_usd":0.9,"cumulative_usd":1.8,"gate_open":false,"note":"repro attempt 2: trying to make the bug reliably red","phase":"reproduce","status":"repro_attempt","ts":"2026-05-26T10:06:00","turn":2}
+{"cost_usd":0.9,"cumulative_usd":2.7,"gate_open":false,"note":"repro attempt 3: trying to make the bug reliably red","phase":"reproduce","status":"repro_attempt","ts":"2026-05-26T10:12:00","turn":3}
+{"cost_usd":0.9,"cumulative_usd":3.6,"gate_open":false,"note":"repro attempt 4: trying to make the bug reliably red","phase":"reproduce","status":"repro_attempt","ts":"2026-05-26T10:18:00","turn":4}
+{"cost_usd":0.9,"cumulative_usd":4.5,"gate_open":true,"note":"repro attempt 5: trying to make the bug reliably red","phase":"reproduce","status":"repro_attempt","ts":"2026-05-26T10:24:00","turn":5}
+{"cost_usd":0.3,"cumulative_usd":4.8,"gate_open":true,"note":"binary-searching the 60-commit regression range","phase":"bisect","status":"bisecting","ts":"2026-05-26T10:30:00","turn":6}
+{"cost_usd":0.3,"cumulative_usd":5.1,"gate_open":true,"note":"binary-searching the 60-commit regression range","phase":"bisect","status":"bisecting","ts":"2026-05-26T10:36:00","turn":7}
+{"cost_usd":0.3,"cumulative_usd":5.4,"gate_open":true,"note":"binary-searching the 60-commit regression range","phase":"bisect","status":"bisecting","ts":"2026-05-26T10:42:00","turn":8}
+{"cost_usd":0.3,"cumulative_usd":5.7,"gate_open":true,"note":"binary-searching the 60-commit regression range","phase":"bisect","status":"bisecting","ts":"2026-05-26T10:48:00","turn":9}
+{"cost_usd":0.3,"cumulative_usd":6.0,"gate_open":true,"note":"binary-searching the 60-commit regression range","phase":"bisect","status":"bisecting","ts":"2026-05-26T10:54:00","turn":10}
+{"cost_usd":0.3,"cumulative_usd":6.3,"gate_open":true,"note":"binary-searching the 60-commit regression range","phase":"bisect","status":"bisecting","ts":"2026-05-26T11:00:00","turn":11}
+{"cost_usd":0.05,"cumulative_usd":6.35,"gate_open":true,"note":"one-line cache-TTL change (300s)","phase":"fix","status":"fix_applied","ts":"2026-05-26T11:06:00","turn":12}
+{"cost_usd":0.25,"cumulative_usd":6.6,"gate_open":true,"note":"independent re-run confirms the fix; bug no longer reproduces","phase":"verify","status":"verified","ts":"2026-05-26T11:12:00","turn":13}

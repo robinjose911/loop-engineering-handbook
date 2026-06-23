@@ -1,0 +1,20 @@
+{
+  "cost_usd": 2.1,
+  "end_variance_usd": 0.0,
+  "example": 5,
+  "matched_total_usd": 7155.08,
+  "start_variance_usd": 1402.88,
+  "title": "Ad-Spend Reconciliation",
+  "unmatched_rows": 0,
+  "waterfall_deltas_usd": [
+    992.78,
+    321.7,
+    88.4
+  ],
+  "waterfall_usd": [
+    1402.88,
+    410.1,
+    88.4,
+    0.0
+  ]
+}

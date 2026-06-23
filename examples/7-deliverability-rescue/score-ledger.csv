@@ -1,0 +1,7 @@
+pass,score,gate_status,delta,signal_fixed
+1,41,below gate,,"baseline draft (ALL-CAPS subject, 6 exclamation marks, image-only body, no unsubscribe)"
+2,62,below gate,+21,rewrote the subject line in sentence case; removed ALL-CAPS
+3,78,below gate,+16,"cut spam-trigger phrases ('ACT NOW', 'FREE', 'limited time') and trimmed exclamations"
+4,88,below gate,+10,added a plaintext part and fixed the link-to-text ratio
+5,93,below gate,+5,added a one-click unsubscribe header and sent from an authenticated domain
+6,96,PASS,+3,tuned the preheader and reduced image-heaviness below the rubric threshold

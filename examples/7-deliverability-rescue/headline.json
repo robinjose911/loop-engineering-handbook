@@ -1,0 +1,17 @@
+{
+  "cost_usd": 1.25,
+  "example": 7,
+  "final_score": 96,
+  "passes": 6,
+  "scores": [
+    41,
+    62,
+    78,
+    88,
+    93,
+    96
+  ],
+  "start_score": 41,
+  "target_score": 95,
+  "title": "Deliverability Rescue (climb to 95)"
+}

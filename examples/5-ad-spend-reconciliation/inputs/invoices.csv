@@ -1,0 +1,8 @@
+invoice_id,vendor,invoice_date,amount,currency
+INV-1001,Google Ads,2026-04-03,3250.00,USD
+INV-1002,Meta Ads,2026-04-05,2180.50,USD
+INV-1003,TikTok Ads,2026-04-09,540.00,EUR
+INV-1004,LinkedIn Ads,2026-04-12,302.00,GBP
+INV-1005,Reddit Ads,2026-04-18,410.10,USD
+INV-1006,Pinterest Ads,2026-04-20,321.70,USD
+INV-1006,Pinterest Ads,2026-04-20,321.70,USD

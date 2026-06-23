@@ -1,0 +1,24 @@
+finding_id,title,scanner_severity,cvss,status,repro_path,verifier_result
+VD-2026-001,SQL injection in report filter,CRITICAL,9.1,reproduced,repro/VD-2026-001/,PoC exploited the issue; patch closes it
+VD-2026-002,Stored XSS in comment render,HIGH,7.4,reproduced,repro/VD-2026-002/,PoC exploited the issue; patch closes it
+VD-2026-003,IDOR on invoice download,HIGH,8.2,reproduced,repro/VD-2026-003/,PoC exploited the issue; patch closes it
+VD-2026-004,Path traversal in export path,HIGH,7.7,reproduced,repro/VD-2026-004/,PoC exploited the issue; patch closes it
+VD-2026-005,Missing authz on admin route,CRITICAL,9.0,reproduced,repro/VD-2026-005/,PoC exploited the issue; patch closes it
+VD-2026-006,SSRF in webhook validator,HIGH,7.9,reproduced,repro/VD-2026-006/,PoC exploited the issue; patch closes it
+VD-2026-007,Open redirect in OAuth return,MEDIUM,5.4,reproduced,repro/VD-2026-007/,PoC exploited the issue; patch closes it
+VD-2026-008,Weak JWT signature check,HIGH,8.0,reproduced,repro/VD-2026-008/,PoC exploited the issue; patch closes it
+VD-2026-009,CSV formula injection in export,MEDIUM,6.1,reproduced,repro/VD-2026-009/,PoC exploited the issue; patch closes it
+VD-2026-010,SQLi (scanner),CRITICAL,9.1,dismissed,,false positive: parameterized query; input never concatenated
+VD-2026-011,XSS (scanner),HIGH,7.0,dismissed,,false positive: output auto-escaped by template engine
+VD-2026-012,Hardcoded secret,HIGH,7.5,dismissed,,"false positive: value is a public test fixture, not a secret"
+VD-2026-013,Insecure deserialization,CRITICAL,9.8,dismissed,,false positive: path unreachable; no untrusted input
+VD-2026-014,Command injection,CRITICAL,9.3,dismissed,,"false positive: args passed as a list, no shell"
+VD-2026-015,Weak crypto (MD5),MEDIUM,5.0,dismissed,,"false positive: MD5 used only for a cache key, not security"
+VD-2026-016,Missing CSRF token,HIGH,7.1,dismissed,,false positive: endpoint is GET-only and read-only
+VD-2026-017,Directory listing,LOW,3.1,dismissed,,false positive: static dir is empty and behind auth
+VD-2026-018,Verbose error,MEDIUM,4.4,dismissed,,false positive: stack traces disabled in prod config
+VD-2026-019,Outdated dependency,HIGH,7.2,dismissed,,false positive: vulnerable code path not imported
+VD-2026-020,CORS misconfig,MEDIUM,5.9,dismissed,,"false positive: wildcard only on a public, unauthenticated API"
+VD-2026-021,Auth bypass via header spoof,CRITICAL,9.4,escalated,repro/VD-2026-021/,reproduced; patch insufficient - escalated to vendor
+VD-2026-022,RCE in image thumbnailer,CRITICAL,9.6,escalated,repro/VD-2026-022/,reproduced; patch insufficient - escalated to vendor
+VD-2026-023,Privilege escalation in role check,HIGH,8.3,escalated,repro/VD-2026-023/,reproduced; patch insufficient - escalated to vendor

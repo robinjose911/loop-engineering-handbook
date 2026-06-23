@@ -1,0 +1,3 @@
+{"note":"drafting answers from the approved binder only","status":"drafting","ts":"2026-06-02T11:00:00","turn":1}
+{"action":"no citation found -> claim self-deleted -> marked GAP","drafted_claim":"we are FedRAMP authorized","note":"No source in the binder; the draft claim was self-deleted.","question":"Are you FedRAMP authorized?","status":"gap_marked","ts":"2026-06-02T11:00:45","turn":2}
+{"action":"no citation found -> claim self-deleted -> marked GAP","drafted_claim":"we carry $10M cyber-insurance","note":"No source in the binder; needs a human to confirm coverage.","question":"Do you carry a $10M cyber-insurance policy?","status":"gap_marked","ts":"2026-06-02T11:01:30","turn":3}

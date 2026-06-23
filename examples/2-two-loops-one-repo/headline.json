@@ -1,0 +1,12 @@
+{
+  "example": 2,
+  "phase1_clobbers": 2,
+  "phase1_conflicts": 6,
+  "phase1_reverts": 1,
+  "phase1_tokens": 2300000,
+  "phase2_conflicts": 0,
+  "phase2_tokens": 1000000,
+  "title": "Two Loops, One Repo",
+  "token_ratio": 2.3,
+  "total_usd": 10.56
+}

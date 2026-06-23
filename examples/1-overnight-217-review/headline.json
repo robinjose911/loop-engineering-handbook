@@ -1,0 +1,12 @@
+{
+  "example": 1,
+  "governed_passes": 4,
+  "governed_total_usd": 11.2,
+  "pr_queue_size": 12,
+  "pricing": "input $2.00/Mtok, output $8.00/Mtok (illustrative)",
+  "savings_usd": 206.14,
+  "title": "The $217 Overnight Code Review",
+  "ungoverned_passes": 91,
+  "ungoverned_total_usd": 217.34,
+  "wasted_passes": 87
+}

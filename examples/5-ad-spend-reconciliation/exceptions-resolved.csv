@@ -1,0 +1,7 @@
+category,issue,variance_impact_usd,resolution
+currency,INV-1003 invoiced in EUR (540.00) - unmatched until normalized to $612.40,612.40,Normalized EUR->USD at the Q2 booked rate
+currency,INV-1004 invoiced in GBP (302.00) - unmatched until normalized to $380.38,380.38,Normalized GBP->USD at the Q2 booked rate
+duplicate,INV-1006 (Pinterest $321.70) ingested twice,321.70,De-duplicated; kept one
+orphan,Bank 'FX CONVERSION FEE' $42.10 has no invoice,42.10,Classified as a bank fee (human rule)
+orphan,Bank 'ADPLATFORM FEE' $34.30 has no invoice,34.30,Classified as a platform fee (human rule)
+orphan,Bank 'AD CREDIT ADJUSTMENT' $12.00 has no invoice,12.00,Classified as a credit (human rule)

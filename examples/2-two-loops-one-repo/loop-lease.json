@@ -1,0 +1,20 @@
+{
+  "acquired_ts": "2026-05-02T02:30:00",
+  "denied": [
+    {
+      "action": "BACKOFF(30s)",
+      "loop": "loop-B-docs",
+      "reason": "path locked by loop-A-refactor",
+      "ts": "2026-05-02T02:31:00"
+    }
+  ],
+  "heartbeat_ts": "2026-05-02T02:30:30",
+  "holder": "loop-A-refactor",
+  "lease_dir": ".loop-lease/",
+  "merge_queue": [
+    "loop-A-refactor#land",
+    "loop-B-docs#queued"
+  ],
+  "path_glob": "src/api/**",
+  "ttl_seconds": 120
+}

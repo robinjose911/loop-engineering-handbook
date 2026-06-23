@@ -1,0 +1,11 @@
+phase,loop,turn,input_tokens,output_tokens,cost_usd,cumulative_usd
+phase1-uncoordinated,loop-A-refactor,1,400000,100000,1.60,1.60
+phase1-uncoordinated,loop-B-docs,2,320000,80000,1.28,2.88
+phase1-uncoordinated,loop-A-refactor,3,360000,90000,1.44,4.32
+phase1-uncoordinated,loop-B-docs,4,280000,70000,1.12,5.44
+phase1-uncoordinated,loop-A-refactor,5,280000,70000,1.12,6.56
+phase1-uncoordinated,loop-B-docs,6,200000,50000,0.80,7.36
+phase2-coordinated,loop-A-refactor,1,280000,70000,1.12,8.48
+phase2-coordinated,loop-B-docs,2,240000,60000,0.96,9.44
+phase2-coordinated,loop-A-refactor,3,160000,40000,0.64,10.08
+phase2-coordinated,loop-B-docs,4,120000,30000,0.48,10.56

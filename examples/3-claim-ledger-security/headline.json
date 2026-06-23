@@ -1,0 +1,11 @@
+{
+  "dismissed": 11,
+  "escalated": 3,
+  "example": 3,
+  "raw_findings": 23,
+  "repro_share_pct": 68.4,
+  "reproduced": 9,
+  "title": "Claim-Ledger Security Fix",
+  "total_usd": 21.04,
+  "triage_share_pct": 8.7
+}
