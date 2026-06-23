@@ -9,12 +9,15 @@ from __future__ import annotations
 
 import json
 import re
+import sys
 from pathlib import Path
 
 import pytest
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 EXAMPLES = REPO_ROOT / "examples"
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from _docutil import contract_block  # noqa: E402
 
 CARD = {
     "1-overnight-217-review": "library/loops/engineering/overnight-217-review.md",
@@ -47,15 +50,6 @@ def _readme(slug: str) -> str:
 
 def _headline(slug: str) -> dict:
     return json.loads((EXAMPLES / slug / "headline.json").read_text())
-
-
-def _contract_block(text: str) -> str | None:
-    """The fenced block that holds the loop contract (contains Goal: + If-blocked:)."""
-    for m in re.finditer(r"```(.*?)```", text, re.S):
-        body = m.group(1)
-        if "Goal:" in body and "If-blocked:" in body:
-            return "\n".join(line.rstrip() for line in body.strip("\n").splitlines())
-    return None
 
 
 def _present(value: float, fmt: str, text: str) -> bool:
@@ -107,8 +101,8 @@ def test_headline_numbers_quoted(slug):
 
 @pytest.mark.parametrize("slug", SLUGS)
 def test_prompt_block_matches_card(slug):
-    readme_block = _contract_block(_readme(slug))
-    card_block = _contract_block((REPO_ROOT / CARD[slug]).read_text())
+    readme_block = contract_block(_readme(slug))
+    card_block = contract_block((REPO_ROOT / CARD[slug]).read_text())
     assert readme_block, f"{slug} README has no contract block"
     assert card_block, f"{slug} card has no contract block"
     assert readme_block == card_block, f"{slug} README prompt block does not match its library card"

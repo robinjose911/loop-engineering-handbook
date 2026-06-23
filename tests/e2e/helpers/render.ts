@@ -28,6 +28,9 @@ export async function assertNoBrokenImages(
       ),
     );
     return imgs
+      // Only assert OUR assets load; external images (e.g. shields.io badges)
+      // are third-party CDNs, exempt like the external-link allowlist.
+      .filter((img) => !/^(https?:)?\/\//i.test(img.getAttribute('src') || ''))
       .filter((img) => !(img.naturalWidth > 0))
       .map((img) => img.getAttribute('src') || '(no src)');
   }, perImageTimeoutMs);

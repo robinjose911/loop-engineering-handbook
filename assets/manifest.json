@@ -7,7 +7,7 @@
       "path": "assets/banner.png",
       "width": 1280,
       "height": 320,
-      "status": "placeholder",
+      "status": "real",
       "label": "PLACEHOLDER - repo banner"
     },
     {
@@ -16,7 +16,7 @@
       "path": "assets/social-preview.png",
       "width": 1280,
       "height": 640,
-      "status": "placeholder",
+      "status": "real",
       "label": "PLACEHOLDER - social / OG preview"
     },
     {

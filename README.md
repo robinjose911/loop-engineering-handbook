@@ -2,29 +2,53 @@
 
 ![Loop Engineering Handbook banner](assets/banner.png)
 
-> The only loop-engineering repo where you can see the **logs**, the **cost**, and the **output** of every example.
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) [![CI](https://img.shields.io/badge/ci-validate%20%2B%20link--check%20%2B%20playwright-brightgreen.svg)](.github/workflows/ci.yml) [![7 worked examples](https://img.shields.io/badge/worked%20examples-7-orange.svg)](examples/README.md)
 
-> **Status:** scaffold (Stage 0). The guide, the prompt library, and the seven worked examples land in later stages. This skeleton exists so the build is test-driven from commit one.
+> Loop engineering is the practice of running an AI coding agent in a **governed, verifiable loop** until a clearly defined goal is met.
 
-Loop engineering is the practice of running an AI coding agent in a **governed, verifiable loop** until a clearly defined goal is met. This repo teaches it three ways:
+**[Learn loop engineering →](docs/README.md)**  ·  **[Copy a loop →](library/README.md)**  ·  **[See one run →](examples/README.md)**
 
-1. **A guide** you learn loop engineering from &mdash; see [docs/](docs/README.md).
-2. **A copy-paste prompt library** &mdash; see [library/](library/README.md).
-3. **Seven worked examples** that show a loop actually running, with the receipts &mdash; see [examples/](examples/README.md).
+The only loop-engineering repo where you can see the **logs**, the **cost**, and the **output** of every example — including work that isn't code.
 
-## Navigate
+## Loop in 30 seconds
 
-- [The guide](docs/README.md) &mdash; what loop engineering is, `/goal` vs `/loop`, benefits, risks + cost, recommendations.
-- [The prompt library](library/README.md) &mdash; one copy-paste card per loop.
-- [The worked examples](examples/README.md) &mdash; seven loops with logs, cost ledgers, and real output.
+A **loop contract** is six fields. Fill them in and you have a governed loop:
+
+```
+Goal:        <the outcome, in one sentence>
+Context:     <repo / inputs / the source of truth the agent may use>
+Constraints: <read-only? sandbox/worktree? cost cap? rate?>
+Done-when:   <the single verifiable stop condition a separate checker can test>
+Evidence:    <the artifacts that prove Done-when is met (logs, repro, ledger, .xlsx)>
+If-blocked:  <halt rule + escalation: max no-progress passes, wall-clock cap, who to ask>
+```
+
+Then run one. In [the overnight code review](examples/1-overnight-217-review/README.md), the *ungoverned* loop burned **$217.34** re-reviewing an unchanged PR queue overnight; the *governed* one — same job, a Done-when and a cost cap — finished in **$11.20**. *(Illustrative — as of June 2026, verify before relying; the receipts are in the example.)*
+
+See the canonical template, with each field explained, in [the loop contract](docs/the-loop-contract.md).
+
+## What this repo is
+
+Three ways to learn loop engineering, in priority order:
+
+1. **A guide** you learn from — [docs/](docs/README.md): what it is, `/goal` vs `/loop`, benefits, risks + cost, recommendations.
+2. **A copy-paste prompt library** — [library/](library/README.md): one card per loop, plus a machine-readable [`catalog.json`](library/catalog.json) and [`llms.txt`](library/llms.txt).
+3. **Seven worked examples** — [examples/](examples/README.md): loops actually running, *with the receipts* (iteration logs, cost ledgers, before/after, charts, real `.xlsx` output).
 
 ## About this repo
 
-- [Contributing](CONTRIBUTING.md)
-- [For agents](AGENTS.md)
-- [Sources](SOURCES.md)
-- [License (MIT)](LICENSE)
+- [Contributing](CONTRIBUTING.md) · [For agents](AGENTS.md) · [Sources](SOURCES.md) · [License (MIT)](LICENSE)
+
+## Credits
+
+Loop engineering as a discipline grew from a lineage of practitioners. Attributed screenshots of the originating posts are pending capture (see [SOURCES.md](SOURCES.md#quote-card-sources)); until then these are labeled placeholder slots:
+
+[![Geoffrey Huntley — the original Ralph loop](assets/quote-cards/huntley.png)](SOURCES.md#quote-card-sources)
+[![Steinberger — long unattended agent loops](assets/quote-cards/steinberger.png)](SOURCES.md#quote-card-sources)
+[![Boris Cherny — loops in Claude Code](assets/quote-cards/cherny.png)](SOURCES.md#quote-card-sources)
+[![Addy Osmani — defining loop engineering](assets/quote-cards/osmani.png)](SOURCES.md#quote-card-sources)
+[![Greg Brockman — the governed Ralph loop++](assets/quote-cards/brockman.png)](SOURCES.md#quote-card-sources)
 
 ---
 
-<sub>Everything here is **synthetic and safe** &mdash; fictional orgs, toy repos, made-up datasets. Every example carries a "reconstruction for teaching" label. Volatile facts are marked *as of June 2026 &mdash; verify before relying*.</sub>
+<sub>Everything here is **synthetic and safe** — fictional orgs, toy repos, made-up datasets. Every example carries a "reconstruction for teaching" label. Volatile facts are marked *as of June 2026 — verify before relying*.</sub>
