@@ -1,15 +1,21 @@
 # The guide
 
-> **Status:** placeholder index (Stage 0). The teaching core lands in **Stage 3**.
+The teaching core of the Loop Engineering Handbook. Read it in order, or jump in.
 
-When complete, this section will hold:
+1. [What is loop engineering?](01-what-is-loop-engineering.md) — the definition,
+   the origin story, and the prompt → context → harness → loop framing.
+2. [/goal vs /loop basics](02-goal-and-loop-basics.md) — the two primitives, the
+   decision flowchart, the tool matrix, and the durability ladder.
+3. [Benefits](03-benefits.md) — why governed loops work and where they pay.
+4. [Risks and cost](04-risks-and-cost.md) — the cost math and the failure catalog.
+5. [Recommendations and tips](05-recommendations-and-tips.md) — the playbook.
 
-- `01-what-is-loop-engineering.md` &mdash; the term, the origin story, the lineage diagram.
-- `02-goal-and-loop-basics.md` &mdash; `/goal` vs `/loop`, the decision flowchart, the tool matrix.
-- `03-benefits.md` &mdash; why it works and where it pays.
-- `04-risks-and-cost.md` &mdash; the cost model and the failure catalog.
-- `05-recommendations-and-tips.md` &mdash; the playbook.
-- `the-loop-contract.md` &mdash; the hero copy-paste artifact.
-- `glossary.md` &mdash; the terms.
+Reference:
+
+- [The loop contract](the-loop-contract.md) — the hero copy-paste artifact.
+- [Glossary](glossary.md) — the terms.
+
+See loop engineering in action in the [worked examples](../examples/README.md),
+or browse the [prompt library](../library/README.md) for copy-paste loops.
 
 [Back to the handbook](../README.md)
