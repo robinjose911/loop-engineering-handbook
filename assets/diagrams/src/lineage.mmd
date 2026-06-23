@@ -1,0 +1,8 @@
+%%{init: {"theme": "neutral"}}%%
+flowchart LR
+  P["Prompt<br/><small>what to do</small>"] --> C["Context<br/><small>what it knows</small>"]
+  C --> H["Harness<br/><small>tools + permissions + memory</small>"]
+  H --> L["Loop<br/><small>repeat until done</small>"]
+  L -. "fresh context each pass" .-> C
+  classDef step fill:#eef2f7,stroke:#5b6b7b,stroke-width:2px,color:#1f2328;
+  class P,C,H,L step;

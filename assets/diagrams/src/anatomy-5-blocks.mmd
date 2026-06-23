@@ -1,0 +1,19 @@
+%%{init: {"theme": "neutral"}}%%
+flowchart TB
+  subgraph CONTRACT["The loop contract"]
+    direction TB
+    G["1 - Goal<br/><small>the outcome, one sentence</small>"]
+    C["2 - Context<br/><small>repo, inputs, the source of truth</small>"]
+    K["3 - Constraints<br/><small>read-only? sandbox? cost cap?</small>"]
+    D["4 - Done-when<br/><small>the verifiable stop condition</small>"]
+    E["5 - Evidence<br/><small>artifacts that prove it</small>"]
+    G --> C --> K --> D --> E
+  end
+  M["Memory spine<br/><small>LOOP.md / notes carried across passes</small>"]
+  M -. threads through every pass .-> CONTRACT
+  IB["If-blocked<br/><small>halt rule + escalation</small>"]
+  E --> IB
+  classDef block fill:#eef2f7,stroke:#5b6b7b,stroke-width:2px,color:#1f2328;
+  classDef spine fill:#fff4e6,stroke:#c98a1a,stroke-width:2px,color:#1f2328;
+  class G,C,K,D,E,IB block;
+  class M spine;

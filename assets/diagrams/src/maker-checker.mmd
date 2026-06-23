@@ -1,0 +1,15 @@
+%%{init: {"theme": "neutral"}}%%
+flowchart LR
+  M["Maker<br/><small>the loop produces work</small>"] --> EV["Executable evidence<br/><small>repro, test, ledger, .xlsx</small>"]
+  EV --> CK{"Checker<br/><small>independent evaluator<br/>(writer != checker)</small>"}
+  CK -- "evidence holds" --> PASS["Accept<br/><small>claim survives</small>"]
+  CK -- "evidence fails" --> FAIL["Reject<br/><small>back to the maker</small>"]
+  FAIL -. "try again next pass" .-> M
+  classDef maker fill:#e7eefc,stroke:#3a5bbf,stroke-width:2px,color:#1f2328;
+  classDef check fill:#fff4e6,stroke:#c98a1a,stroke-width:2px,color:#1f2328;
+  classDef pass fill:#e6f4ea,stroke:#2f7d46,stroke-width:2px,color:#1f2328;
+  classDef fail fill:#fbe9e9,stroke:#b3261e,stroke-width:2px,color:#1f2328;
+  class M maker;
+  class EV,CK check;
+  class PASS pass;
+  class FAIL fail;

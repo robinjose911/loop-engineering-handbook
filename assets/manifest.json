@@ -25,7 +25,7 @@
       "path": "assets/diagrams/lineage.png",
       "width": 1200,
       "height": 600,
-      "status": "placeholder",
+      "status": "real",
       "label": "PLACEHOLDER - lineage diagram (prompt -> context -> harness -> loop)"
     },
     {
@@ -34,7 +34,7 @@
       "path": "assets/diagrams/goal-vs-loop-flowchart.png",
       "width": 1200,
       "height": 800,
-      "status": "placeholder",
+      "status": "real",
       "label": "PLACEHOLDER - /goal vs /loop decision flowchart"
     },
     {
@@ -43,7 +43,7 @@
       "path": "assets/diagrams/anatomy-5-blocks.png",
       "width": 1200,
       "height": 700,
-      "status": "placeholder",
+      "status": "real",
       "label": "PLACEHOLDER - anatomy: 5 blocks + memory spine"
     },
     {
@@ -52,7 +52,7 @@
       "path": "assets/diagrams/maker-checker.png",
       "width": 1200,
       "height": 600,
-      "status": "placeholder",
+      "status": "real",
       "label": "PLACEHOLDER - maker-checker"
     },
     {
@@ -61,7 +61,7 @@
       "path": "assets/diagrams/durability-ladder.png",
       "width": 1000,
       "height": 800,
-      "status": "placeholder",
+      "status": "real",
       "label": "PLACEHOLDER - durability ladder"
     },
     {
@@ -70,7 +70,7 @@
       "path": "assets/charts/cost-curve-217.png",
       "width": 1000,
       "height": 600,
-      "status": "placeholder",
+      "status": "real",
       "label": "PLACEHOLDER - dual cost curve ($217 vs $11)"
     },
     {
@@ -79,7 +79,7 @@
       "path": "assets/charts/collision-vs-zipper.png",
       "width": 1000,
       "height": 600,
-      "status": "placeholder",
+      "status": "real",
       "label": "PLACEHOLDER - collision-vs-zipper swimlane"
     },
     {
@@ -88,7 +88,7 @@
       "path": "assets/charts/security-funnel.png",
       "width": 1000,
       "height": 600,
-      "status": "placeholder",
+      "status": "real",
       "label": "PLACEHOLDER - security funnel (23 -> 9/11/3)"
     },
     {
@@ -97,7 +97,7 @@
       "path": "assets/charts/reproduce-cost-by-phase.png",
       "width": 1000,
       "height": 600,
-      "status": "placeholder",
+      "status": "real",
       "label": "PLACEHOLDER - reproduce cost-by-phase"
     },
     {
@@ -106,7 +106,7 @@
       "path": "assets/charts/ad-spend-waterfall.png",
       "width": 1000,
       "height": 600,
-      "status": "placeholder",
+      "status": "real",
       "label": "PLACEHOLDER - ad-spend waterfall ($1,402.88 -> $0.00)"
     },
     {
@@ -115,7 +115,7 @@
       "path": "assets/charts/deliverability-climb.png",
       "width": 1000,
       "height": 600,
-      "status": "placeholder",
+      "status": "real",
       "label": "PLACEHOLDER - deliverability climb (41 -> 96)"
     },
     {
@@ -124,7 +124,7 @@
       "path": "assets/charts/summary-coverage-climb.png",
       "width": 1000,
       "height": 600,
-      "status": "placeholder",
+      "status": "real",
       "label": "PLACEHOLDER - summary: coverage / score climb"
     },
     {
@@ -133,7 +133,7 @@
       "path": "assets/charts/summary-cost-accumulation.png",
       "width": 1000,
       "height": 600,
-      "status": "placeholder",
+      "status": "real",
       "label": "PLACEHOLDER - summary: cost accumulation"
     },
     {
@@ -142,7 +142,7 @@
       "path": "assets/charts/summary-failures-over-time.png",
       "width": 1000,
       "height": 600,
-      "status": "placeholder",
+      "status": "real",
       "label": "PLACEHOLDER - summary: failures over time"
     },
     {

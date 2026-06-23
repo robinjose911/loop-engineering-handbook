@@ -1,0 +1,15 @@
+%%{init: {"theme": "neutral"}}%%
+flowchart TD
+  S(["Start: you have a task for an agent"]) --> Q1{"Is there a single<br/>verifiable done-condition?"}
+  Q1 -- "Yes" --> Q2{"Can a separate evaluator<br/>check it each pass?"}
+  Q1 -- "No, it's open-ended / ongoing" --> Q3{"Should it run on a<br/>schedule, with no end?"}
+  Q2 -- "Yes" --> G["Use /goal<br/><small>depth-first to the condition,<br/>writer != checker</small>"]
+  Q2 -- "Not really" --> G
+  Q3 -- "Yes (a security camera)" --> L["Use /loop<br/><small>interval cron, governed,<br/>circuit-breaker + cost cap</small>"]
+  Q3 -- "No, run it once" --> O["One-shot prompt<br/><small>no loop needed</small>"]
+  classDef goal fill:#e6f4ea,stroke:#2f7d46,stroke-width:2px,color:#1f2328;
+  classDef loop fill:#e7eefc,stroke:#3a5bbf,stroke-width:2px,color:#1f2328;
+  classDef plain fill:#eef2f7,stroke:#5b6b7b,stroke-width:1.5px,color:#1f2328;
+  class G goal;
+  class L loop;
+  class S,O,Q1,Q2,Q3 plain;
