@@ -1,0 +1,19 @@
+{
+  "owner": "OWNER_PLACEHOLDER",
+  "repoName": "loop-engineering-handbook",
+  "theme": "neutral",
+  "tagline": "The only loop-engineering repo where you can see the logs, the cost, and the output of every example.",
+  "definition": "Loop engineering is the practice of running an AI coding agent in a governed, verifiable loop until a clearly defined goal is met.",
+  "badges": [
+    { "label": "license", "alt": "License: MIT", "href": "LICENSE", "img": "https://img.shields.io/badge/license-MIT-blue.svg" },
+    { "label": "ci", "alt": "CI", "href": ".github/workflows/ci.yml", "img": "https://img.shields.io/badge/ci-validate%20%2B%20link--check%20%2B%20playwright-brightgreen.svg" },
+    { "label": "examples", "alt": "7 worked examples", "href": "examples/README.md", "img": "https://img.shields.io/badge/worked%20examples-7-orange.svg" }
+  ],
+  "buttons": [
+    { "label": "Learn loop engineering", "href": "docs/README.md" },
+    { "label": "Copy a loop", "href": "library/README.md" },
+    { "label": "See one run", "href": "examples/README.md" }
+  ],
+  "socialPreviewText": "Loop Engineering Handbook - see the logs, the cost, and the output of every example.",
+  "accuracyStance": "label-and-cite: volatile specifics are marked 'as of June 2026 - verify before relying'; self-reported figures marked illustrative; all links in SOURCES.md."
+}

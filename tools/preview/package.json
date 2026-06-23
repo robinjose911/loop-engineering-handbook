@@ -1,0 +1,17 @@
+{
+  "name": "loop-handbook-preview",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Local preview render harness: renders the repo's markdown to GitHub-flavored HTML and serves it on localhost:4321 so the Playwright render-checks never need to push to GitHub.",
+  "scripts": {
+    "build": "node build.mjs",
+    "serve": "node serve.mjs",
+    "test": "node test_build.mjs"
+  },
+  "dependencies": {
+    "github-slugger": "^2.0.0",
+    "markdown-it": "^14.1.0",
+    "markdown-it-anchor": "^9.2.0"
+  }
+}

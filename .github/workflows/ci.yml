@@ -1,0 +1,47 @@
+name: ci
+
+# Validate + link-check + Playwright render-checks. This workflow is also the
+# repo's trust badge: the receipts are checked on every push.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  validate-and-render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Python tooling
+        run: pip install -r tools/requirements.txt
+
+      - name: Install preview deps
+        run: npm --prefix tools/preview install
+
+      - name: Install Playwright deps
+        working-directory: tests/e2e
+        run: |
+          npm install
+          npx playwright install --with-deps chromium
+
+      - name: Unit validators (pytest + preview unit test)
+        run: python tools/validate/all.py
+
+      # globalSetup regenerates placeholders + builds the preview before the
+      # server boots, so no separate build/stub step is needed here.
+      - name: Integration render-checks (Playwright)
+        working-directory: tests/e2e
+        run: npx playwright test
+        env:
+          CI: 'true'

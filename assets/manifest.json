@@ -1,0 +1,229 @@
+{
+  "description": "Single source of truth for every visual slot in the repo. The placeholder generator (tools/stubs/make_placeholders.py) fills every slot whose status is 'placeholder' with a labeled PNG at the declared dimensions. Real assets (diagrams in Stage 2, banner/OG in Stage 6) overwrite the same path and flip status to 'real'. The preview render-check (assertNoBrokenImages) stays green throughout.",
+  "slots": [
+    {
+      "id": "banner",
+      "kind": "banner",
+      "path": "assets/banner.png",
+      "width": 1280,
+      "height": 320,
+      "status": "placeholder",
+      "label": "PLACEHOLDER - repo banner"
+    },
+    {
+      "id": "social-preview",
+      "kind": "social",
+      "path": "assets/social-preview.png",
+      "width": 1280,
+      "height": 640,
+      "status": "placeholder",
+      "label": "PLACEHOLDER - social / OG preview"
+    },
+    {
+      "id": "diagram-lineage",
+      "kind": "diagram",
+      "path": "assets/diagrams/lineage.png",
+      "width": 1200,
+      "height": 600,
+      "status": "placeholder",
+      "label": "PLACEHOLDER - lineage diagram (prompt -> context -> harness -> loop)"
+    },
+    {
+      "id": "diagram-goal-vs-loop",
+      "kind": "diagram",
+      "path": "assets/diagrams/goal-vs-loop-flowchart.png",
+      "width": 1200,
+      "height": 800,
+      "status": "placeholder",
+      "label": "PLACEHOLDER - /goal vs /loop decision flowchart"
+    },
+    {
+      "id": "diagram-anatomy",
+      "kind": "diagram",
+      "path": "assets/diagrams/anatomy-5-blocks.png",
+      "width": 1200,
+      "height": 700,
+      "status": "placeholder",
+      "label": "PLACEHOLDER - anatomy: 5 blocks + memory spine"
+    },
+    {
+      "id": "diagram-maker-checker",
+      "kind": "diagram",
+      "path": "assets/diagrams/maker-checker.png",
+      "width": 1200,
+      "height": 600,
+      "status": "placeholder",
+      "label": "PLACEHOLDER - maker-checker"
+    },
+    {
+      "id": "diagram-durability-ladder",
+      "kind": "diagram",
+      "path": "assets/diagrams/durability-ladder.png",
+      "width": 1000,
+      "height": 800,
+      "status": "placeholder",
+      "label": "PLACEHOLDER - durability ladder"
+    },
+    {
+      "id": "chart-cost-curve-217",
+      "kind": "chart",
+      "path": "assets/charts/cost-curve-217.png",
+      "width": 1000,
+      "height": 600,
+      "status": "placeholder",
+      "label": "PLACEHOLDER - dual cost curve ($217 vs $11)"
+    },
+    {
+      "id": "chart-collision-vs-zipper",
+      "kind": "chart",
+      "path": "assets/charts/collision-vs-zipper.png",
+      "width": 1000,
+      "height": 600,
+      "status": "placeholder",
+      "label": "PLACEHOLDER - collision-vs-zipper swimlane"
+    },
+    {
+      "id": "chart-security-funnel",
+      "kind": "chart",
+      "path": "assets/charts/security-funnel.png",
+      "width": 1000,
+      "height": 600,
+      "status": "placeholder",
+      "label": "PLACEHOLDER - security funnel (23 -> 9/11/3)"
+    },
+    {
+      "id": "chart-reproduce-cost-by-phase",
+      "kind": "chart",
+      "path": "assets/charts/reproduce-cost-by-phase.png",
+      "width": 1000,
+      "height": 600,
+      "status": "placeholder",
+      "label": "PLACEHOLDER - reproduce cost-by-phase"
+    },
+    {
+      "id": "chart-ad-spend-waterfall",
+      "kind": "chart",
+      "path": "assets/charts/ad-spend-waterfall.png",
+      "width": 1000,
+      "height": 600,
+      "status": "placeholder",
+      "label": "PLACEHOLDER - ad-spend waterfall ($1,402.88 -> $0.00)"
+    },
+    {
+      "id": "chart-deliverability-climb",
+      "kind": "chart",
+      "path": "assets/charts/deliverability-climb.png",
+      "width": 1000,
+      "height": 600,
+      "status": "placeholder",
+      "label": "PLACEHOLDER - deliverability climb (41 -> 96)"
+    },
+    {
+      "id": "chart-summary-coverage-climb",
+      "kind": "chart",
+      "path": "assets/charts/summary-coverage-climb.png",
+      "width": 1000,
+      "height": 600,
+      "status": "placeholder",
+      "label": "PLACEHOLDER - summary: coverage / score climb"
+    },
+    {
+      "id": "chart-summary-cost-accumulation",
+      "kind": "chart",
+      "path": "assets/charts/summary-cost-accumulation.png",
+      "width": 1000,
+      "height": 600,
+      "status": "placeholder",
+      "label": "PLACEHOLDER - summary: cost accumulation"
+    },
+    {
+      "id": "chart-summary-failures-over-time",
+      "kind": "chart",
+      "path": "assets/charts/summary-failures-over-time.png",
+      "width": 1000,
+      "height": 600,
+      "status": "placeholder",
+      "label": "PLACEHOLDER - summary: failures over time"
+    },
+    {
+      "id": "quote-steinberger",
+      "kind": "quote-card",
+      "path": "assets/quote-cards/steinberger.png",
+      "width": 1000,
+      "height": 700,
+      "status": "placeholder",
+      "label": "SCREENSHOT SLOT - Steinberger post - see SOURCES.md",
+      "alt": "Screenshot slot: Geoffrey Huntley / Steinberger viral post on the Ralph loop (see SOURCES.md)",
+      "sourceUrl": "https://example.com/SOURCE-steinberger-PENDING",
+      "captureChecklist": [
+        "Open the source post in a logged-out browser",
+        "Capture at 2x, 1000x700 crop centered on the quote",
+        "Save over assets/quote-cards/steinberger.png and flip status to 'real'"
+      ]
+    },
+    {
+      "id": "quote-cherny",
+      "kind": "quote-card",
+      "path": "assets/quote-cards/cherny.png",
+      "width": 1000,
+      "height": 700,
+      "status": "placeholder",
+      "label": "SCREENSHOT SLOT - Cherny post - see SOURCES.md",
+      "alt": "Screenshot slot: Boris Cherny post on loops in Claude Code (see SOURCES.md)",
+      "sourceUrl": "https://example.com/SOURCE-cherny-PENDING",
+      "captureChecklist": [
+        "Open the source post in a logged-out browser",
+        "Capture at 2x, 1000x700 crop centered on the quote",
+        "Save over assets/quote-cards/cherny.png and flip status to 'real'"
+      ]
+    },
+    {
+      "id": "quote-osmani",
+      "kind": "quote-card",
+      "path": "assets/quote-cards/osmani.png",
+      "width": 1000,
+      "height": 700,
+      "status": "placeholder",
+      "label": "SCREENSHOT SLOT - Osmani post - see SOURCES.md",
+      "alt": "Screenshot slot: Addy Osmani post defining loop engineering (see SOURCES.md)",
+      "sourceUrl": "https://example.com/SOURCE-osmani-PENDING",
+      "captureChecklist": [
+        "Open the source post in a logged-out browser",
+        "Capture at 2x, 1000x700 crop centered on the quote",
+        "Save over assets/quote-cards/osmani.png and flip status to 'real'"
+      ]
+    },
+    {
+      "id": "quote-huntley",
+      "kind": "quote-card",
+      "path": "assets/quote-cards/huntley.png",
+      "width": 1000,
+      "height": 700,
+      "status": "placeholder",
+      "label": "SCREENSHOT SLOT - Huntley post - see SOURCES.md",
+      "alt": "Screenshot slot: Geoffrey Huntley original Ralph loop post (see SOURCES.md)",
+      "sourceUrl": "https://example.com/SOURCE-huntley-PENDING",
+      "captureChecklist": [
+        "Open the source post in a logged-out browser",
+        "Capture at 2x, 1000x700 crop centered on the quote",
+        "Save over assets/quote-cards/huntley.png and flip status to 'real'"
+      ]
+    },
+    {
+      "id": "quote-brockman",
+      "kind": "quote-card",
+      "path": "assets/quote-cards/brockman.png",
+      "width": 1000,
+      "height": 700,
+      "status": "placeholder",
+      "label": "SCREENSHOT SLOT - Brockman post - see SOURCES.md",
+      "alt": "Screenshot slot: Greg Brockman 'Ralph loop++' post (see SOURCES.md)",
+      "sourceUrl": "https://example.com/SOURCE-brockman-PENDING",
+      "captureChecklist": [
+        "Open the source post in a logged-out browser",
+        "Capture at 2x, 1000x700 crop centered on the quote",
+        "Save over assets/quote-cards/brockman.png and flip status to 'real'"
+      ]
+    }
+  ]
+}

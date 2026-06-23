@@ -1,0 +1,12 @@
+{
+  "name": "loop-handbook-e2e",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Playwright integration render-checks for the Loop Engineering Handbook. Each stageN-*.spec.ts runs against the locally rendered preview (tools/preview) on localhost:4321.",
+  "scripts": {
+    "test": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.48.0"
+  }
+}
