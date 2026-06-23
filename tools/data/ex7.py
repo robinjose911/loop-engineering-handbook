@@ -66,7 +66,10 @@ def generate() -> dict:
         "<h1>ACT NOW!!! LIMITED TIME OFFER!!!</h1>\n"
         "<p>FREE GIFT!!! CLICK HERE!!! <a href=\"#\">CLICK</a> <a href=\"#\">CLICK</a> "
         "<a href=\"#\">CLICK</a></p>\n"
-        "<img src=\"banner.png\" width=\"600\" height=\"800\">\n"
+        # Image-heavy body (a spam signal). Self-contained data-URI so the sample
+        # artifact has no broken image; width/height keep it visually dominant.
+        "<img alt=\"promo banner\" width=\"600\" height=\"800\" "
+        "src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg==\">\n"
         "<!-- spam score: 41/100 - no unsubscribe, ALL-CAPS, image-only -->\n"
         "</body></html>\n",
     )

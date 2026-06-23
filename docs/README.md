@@ -14,6 +14,7 @@ Reference:
 
 - [The loop contract](the-loop-contract.md) — the hero copy-paste artifact.
 - [Glossary](glossary.md) — the terms.
+- [FAQ](faq.md) — is this just Ralph? won't it bankrupt me? does my tool support it?
 
 See loop engineering in action in the [worked examples](../examples/README.md),
 or browse the [prompt library](../library/README.md) for copy-paste loops.

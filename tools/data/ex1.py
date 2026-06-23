@@ -98,6 +98,7 @@ def generate() -> dict:
     write_text(
         d / "FIXED-loop-contract.md",
         "# Governed loop contract (the fix)\n\n"
+        "> Synthetic reconstruction for teaching; figures illustrative - as of June 2026, verify before relying.\n\n"
         "```\n"
         "Goal:       Review every open PR in Meridian/payments-gateway once per change.\n"
         "Context:    Repo at HEAD; the open-PR queue (currently 12).\n"

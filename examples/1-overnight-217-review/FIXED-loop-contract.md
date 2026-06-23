@@ -1,5 +1,7 @@
 # Governed loop contract (the fix)
 
+> Synthetic reconstruction for teaching; figures illustrative - as of June 2026, verify before relying.
+
 ```
 Goal:       Review every open PR in Meridian/payments-gateway once per change.
 Context:    Repo at HEAD; the open-PR queue (currently 12).

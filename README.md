@@ -37,7 +37,11 @@ Three ways to learn loop engineering, in priority order:
 
 ## About this repo
 
-- [Contributing](CONTRIBUTING.md) · [For agents](AGENTS.md) · [Sources](SOURCES.md) · [License (MIT)](LICENSE)
+- [Contributing](CONTRIBUTING.md) · [For agents](AGENTS.md) · [FAQ](docs/faq.md) · [Sources](SOURCES.md) · [License (MIT)](LICENSE)
+
+## Star history
+
+_Star-history chart appears here after launch — set the owner in `repo.config.json`, then this section links `https://star-history.com/#OWNER/loop-engineering-handbook`._
 
 ## Credits
 
