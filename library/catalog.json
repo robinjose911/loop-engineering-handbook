@@ -1,0 +1,264 @@
+{
+  "version": 1,
+  "generated_from": "library/loops/**/*.md front-matter",
+  "count": 17,
+  "categories": [
+    "engineering",
+    "operations",
+    "content",
+    "research",
+    "data"
+  ],
+  "primitives": [
+    "/goal",
+    "/loop",
+    "routine"
+  ],
+  "cards": [
+    {
+      "id": "claim-ledger-security",
+      "title": "Claim-Ledger Security Triage",
+      "category": "engineering",
+      "primitive": "/goal",
+      "use_when": "A scanner dumped a pile of findings and you want only the ones backed by a runnable repro.",
+      "verify": "Every accepted finding has a PoC that fails before the patch and passes after; an independent verifier re-ran each.",
+      "tags": [
+        "security",
+        "maker-checker",
+        "executable-evidence"
+      ],
+      "path": "library/loops/engineering/claim-ledger-security.md",
+      "example": "../../../examples/3-claim-ledger-security/artifacts.md"
+    },
+    {
+      "id": "flaky-test-quarantine",
+      "title": "Flaky-Test Quarantine Warden",
+      "category": "engineering",
+      "primitive": "/loop",
+      "use_when": "Flaky tests are eroding trust in CI and you want a loop to detect, quarantine, and file them.",
+      "verify": "Each quarantined test failed intermittently across N reruns; the suite's flake rate trends down.",
+      "tags": [
+        "ci",
+        "flaky-tests",
+        "quarantine"
+      ],
+      "path": "library/loops/engineering/flaky-test-quarantine.md"
+    },
+    {
+      "id": "overnight-217-review",
+      "title": "Overnight Code Review (governed)",
+      "category": "engineering",
+      "primitive": "/loop",
+      "use_when": "You want an agent to review an open-PR queue continuously, without it re-reviewing unchanged PRs forever.",
+      "verify": "No PR has changed head SHA since the last pass; cost stays under the nightly cap.",
+      "tags": [
+        "code-review",
+        "circuit-breaker",
+        "cost-cap"
+      ],
+      "path": "library/loops/engineering/overnight-217-review.md",
+      "example": "../../../examples/1-overnight-217-review/artifacts.md"
+    },
+    {
+      "id": "reproduce-before-fix",
+      "title": "Reproduce-Before-You-Fix",
+      "category": "engineering",
+      "primitive": "/goal",
+      "use_when": "A regression needs fixing and you want to forbid touching source until the bug is reliably reproduced.",
+      "verify": "A test reproduces the bug on 10/10 runs before any source edit; the fix makes it green.",
+      "tags": [
+        "regression",
+        "reproduction-gate",
+        "git-bisect"
+      ],
+      "path": "library/loops/engineering/reproduce-before-fix.md",
+      "example": "../../../examples/4-reproduce-before-fix/artifacts.md"
+    },
+    {
+      "id": "two-loops-one-repo",
+      "title": "Two Loops, One Repo (coordinated)",
+      "category": "engineering",
+      "primitive": "/loop",
+      "use_when": "You want two agents (e.g. a refactor loop and a docs loop) working the same repo without clobbering each other.",
+      "verify": "Zero merge conflicts, clobbers, or reverts across a run; every edit held a lease.",
+      "tags": [
+        "multi-loop",
+        "file-lease",
+        "merge-queue"
+      ],
+      "path": "library/loops/engineering/two-loops-one-repo.md",
+      "example": "../../../examples/2-two-loops-one-repo/artifacts.md"
+    },
+    {
+      "id": "ad-spend-reconciliation",
+      "title": "Ad-Spend Reconciliation",
+      "category": "operations",
+      "primitive": "/goal",
+      "use_when": "You need messy invoices reconciled against a bank export to a hard zero-variance gate.",
+      "verify": "The reconciliation workbook shows variance of zero and zero unmatched rows.",
+      "tags": [
+        "reconciliation",
+        "validation-gate",
+        "spreadsheet"
+      ],
+      "path": "library/loops/operations/ad-spend-reconciliation.md",
+      "example": "../../../examples/5-ad-spend-reconciliation/artifacts.md"
+    },
+    {
+      "id": "log-anomaly-patrol",
+      "title": "Log-Anomaly Patrol",
+      "category": "operations",
+      "primitive": "/loop",
+      "use_when": "You want a security-camera loop that watches logs for new error signatures and opens an issue once per signature.",
+      "verify": "Each opened issue maps to an error signature not seen in the prior window; no duplicate issues.",
+      "tags": [
+        "observability",
+        "patrol",
+        "dedupe"
+      ],
+      "path": "library/loops/operations/log-anomaly-patrol.md"
+    },
+    {
+      "id": "saas-spend-audit",
+      "title": "SaaS Spend-Audit Circuit-Breaker",
+      "category": "operations",
+      "primitive": "/loop",
+      "use_when": "You want a recurring audit of SaaS/cloud spend that flags anomalies but can't run up its own bill.",
+      "verify": "Each flagged line exceeds its baseline by the configured threshold; the audit itself stays under a cost cap.",
+      "tags": [
+        "finops",
+        "anomaly",
+        "cost-cap"
+      ],
+      "path": "library/loops/operations/saas-spend-audit.md"
+    },
+    {
+      "id": "changelog-from-commits",
+      "title": "Changelog From Commits",
+      "category": "content",
+      "primitive": "/goal",
+      "use_when": "You want a release changelog drafted only from the actual commit/PR history, with every entry traceable.",
+      "verify": "Every changelog line cites a real commit or PR in the range; no entry is unsourced.",
+      "tags": [
+        "release",
+        "changelog",
+        "cite-or-cut"
+      ],
+      "path": "library/loops/content/changelog-from-commits.md"
+    },
+    {
+      "id": "deliverability-rescue",
+      "title": "Deliverability Rescue (climb to a gate)",
+      "category": "content",
+      "primitive": "/goal",
+      "use_when": "An email/landing page must clear a spam/quality score and you want a writer-vs-scorer loop to climb to it.",
+      "verify": "A separate scorer rates the final draft at or above the gate on a frozen rubric.",
+      "tags": [
+        "email",
+        "metric-climb",
+        "independent-grader"
+      ],
+      "path": "library/loops/content/deliverability-rescue.md",
+      "example": "../../../examples/7-deliverability-rescue/artifacts.md"
+    },
+    {
+      "id": "docs-freshness-patrol",
+      "title": "Docs-Freshness Patrol",
+      "category": "content",
+      "primitive": "/loop",
+      "use_when": "You want a patrol that flags docs whose code examples or referenced APIs have drifted from the codebase.",
+      "verify": "Each flagged doc references a symbol/path that no longer exists or a snippet that no longer compiles.",
+      "tags": [
+        "docs",
+        "drift",
+        "patrol"
+      ],
+      "path": "library/loops/content/docs-freshness-patrol.md"
+    },
+    {
+      "id": "claim-verify-research",
+      "title": "Claim-Verify Research Brief",
+      "category": "research",
+      "primitive": "/goal",
+      "use_when": "You want a research brief where every claim is independently verified before it is allowed to stay.",
+      "verify": "Each surviving claim has >= 2 independent supporting sources; unverified claims were cut or flagged.",
+      "tags": [
+        "research",
+        "verification",
+        "cite-or-cut"
+      ],
+      "path": "library/loops/research/claim-verify-research.md"
+    },
+    {
+      "id": "competitive-intel-digest",
+      "title": "Competitive-Intel Digest",
+      "category": "research",
+      "primitive": "routine",
+      "use_when": "You want a scheduled digest of changes to a watchlist of competitor pages, with each claim linked to its source.",
+      "verify": "Every digest item links to the specific source page and quotes the changed text; nothing is unsourced.",
+      "tags": [
+        "monitoring",
+        "digest",
+        "routine"
+      ],
+      "path": "library/loops/research/competitive-intel-digest.md"
+    },
+    {
+      "id": "rfp-questionnaire-pack",
+      "title": "RFP / Security Questionnaire Pack",
+      "category": "research",
+      "primitive": "/goal",
+      "use_when": "You must answer a long questionnaire and every answer has to cite an approved source or be left as a gap.",
+      "verify": "Every answered row cites a source line from the approved binder; unsupported claims are marked GAP, not invented.",
+      "tags": [
+        "rfp",
+        "cite-or-cut",
+        "claim-ledger"
+      ],
+      "path": "library/loops/research/rfp-questionnaire-pack.md",
+      "example": "../../../examples/6-rfp-questionnaire-pack/artifacts.md"
+    },
+    {
+      "id": "csv-normalizer",
+      "title": "Messy-CSV Normalizer",
+      "category": "data",
+      "primitive": "/goal",
+      "use_when": "You have messy CSVs (mixed formats, currencies, dates, encodings) to normalize to a target schema.",
+      "verify": "Every output row conforms to the target schema; a round-trip check reproduces source totals.",
+      "tags": [
+        "etl",
+        "normalization",
+        "validation-gate"
+      ],
+      "path": "library/loops/data/csv-normalizer.md"
+    },
+    {
+      "id": "data-quality-gate",
+      "title": "Data-Quality Gate Patrol",
+      "category": "data",
+      "primitive": "/loop",
+      "use_when": "You want a patrol that checks a dataset/table against quality rules and blocks or flags on violations.",
+      "verify": "Every flagged row violates a stated rule; a clean pass reports zero violations against the rule set.",
+      "tags": [
+        "data-quality",
+        "validation-gate",
+        "patrol"
+      ],
+      "path": "library/loops/data/data-quality-gate.md"
+    },
+    {
+      "id": "schema-migration-backfill",
+      "title": "Schema-Migration Backfill",
+      "category": "data",
+      "primitive": "/goal",
+      "use_when": "You're backfilling a new column/table and need every affected row migrated with a verifiable invariant.",
+      "verify": "Post-migration, the invariant holds for 100% of affected rows and counts match the pre-migration plan.",
+      "tags": [
+        "migration",
+        "backfill",
+        "invariant"
+      ],
+      "path": "library/loops/data/schema-migration-backfill.md"
+    }
+  ]
+}

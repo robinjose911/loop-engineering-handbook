@@ -4,4 +4,5 @@ Pillow>=10.0        # placeholder-image generation (tools/stubs)
 openpyxl>=3.1       # the two real .xlsx artifacts (Stage 1)
 matplotlib>=3.8     # charts from CSV (Stage 2)
 jsonschema>=4.0     # catalog.json / manifest schema validation
+PyYAML>=6.0         # loop-card front-matter parsing (library)
 pytest>=8.0         # the validator runner

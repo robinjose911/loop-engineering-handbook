@@ -1,0 +1,34 @@
+# Loop Engineering Handbook - prompt library (for agents)
+
+This directory is a catalog of governed-loop recipes ('cards').
+
+## How to use
+- Read `catalog.json` for the machine-readable index (schema: `catalog.schema.json`).
+- Each card lives at its `path` and contains a fill-in-the-blanks prompt that reuses
+  the canonical six-field loop contract (`../docs/the-loop-contract.md`).
+- Pick a card by `category` and `primitive`, copy its Prompt block, fill the brackets,
+  and obey its Done-when + Verify before treating the loop as finished.
+
+## Cards (17)
+### engineering
+- claim-ledger-security (/goal): A scanner dumped a pile of findings and you want only the ones backed by a runnable repro. -> library/loops/engineering/claim-ledger-security.md
+- flaky-test-quarantine (/loop): Flaky tests are eroding trust in CI and you want a loop to detect, quarantine, and file them. -> library/loops/engineering/flaky-test-quarantine.md
+- overnight-217-review (/loop): You want an agent to review an open-PR queue continuously, without it re-reviewing unchanged PRs forever. -> library/loops/engineering/overnight-217-review.md
+- reproduce-before-fix (/goal): A regression needs fixing and you want to forbid touching source until the bug is reliably reproduced. -> library/loops/engineering/reproduce-before-fix.md
+- two-loops-one-repo (/loop): You want two agents (e.g. a refactor loop and a docs loop) working the same repo without clobbering each other. -> library/loops/engineering/two-loops-one-repo.md
+### operations
+- ad-spend-reconciliation (/goal): You need messy invoices reconciled against a bank export to a hard zero-variance gate. -> library/loops/operations/ad-spend-reconciliation.md
+- log-anomaly-patrol (/loop): You want a security-camera loop that watches logs for new error signatures and opens an issue once per signature. -> library/loops/operations/log-anomaly-patrol.md
+- saas-spend-audit (/loop): You want a recurring audit of SaaS/cloud spend that flags anomalies but can't run up its own bill. -> library/loops/operations/saas-spend-audit.md
+### content
+- changelog-from-commits (/goal): You want a release changelog drafted only from the actual commit/PR history, with every entry traceable. -> library/loops/content/changelog-from-commits.md
+- deliverability-rescue (/goal): An email/landing page must clear a spam/quality score and you want a writer-vs-scorer loop to climb to it. -> library/loops/content/deliverability-rescue.md
+- docs-freshness-patrol (/loop): You want a patrol that flags docs whose code examples or referenced APIs have drifted from the codebase. -> library/loops/content/docs-freshness-patrol.md
+### research
+- claim-verify-research (/goal): You want a research brief where every claim is independently verified before it is allowed to stay. -> library/loops/research/claim-verify-research.md
+- competitive-intel-digest (routine): You want a scheduled digest of changes to a watchlist of competitor pages, with each claim linked to its source. -> library/loops/research/competitive-intel-digest.md
+- rfp-questionnaire-pack (/goal): You must answer a long questionnaire and every answer has to cite an approved source or be left as a gap. -> library/loops/research/rfp-questionnaire-pack.md
+### data
+- csv-normalizer (/goal): You have messy CSVs (mixed formats, currencies, dates, encodings) to normalize to a target schema. -> library/loops/data/csv-normalizer.md
+- data-quality-gate (/loop): You want a patrol that checks a dataset/table against quality rules and blocks or flags on violations. -> library/loops/data/data-quality-gate.md
+- schema-migration-backfill (/goal): You're backfilling a new column/table and need every affected row migrated with a verifiable invariant. -> library/loops/data/schema-migration-backfill.md
