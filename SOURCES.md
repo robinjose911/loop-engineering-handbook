@@ -7,8 +7,8 @@ is referenced somewhere.
 
 > **Accuracy stance:** label-and-cite. Volatile specifics are included but marked
 > *as of June 2026 — verify before relying*. Self-reported figures are marked
-> illustrative. Quote-card screenshots are **slots** until the real images are
-> captured.
+> illustrative. Quote-card screenshots are captured and each links to its
+> originating post.
 
 ## Origin and lineage
 
@@ -19,11 +19,11 @@ publication; some are **illustrative** reconstructions for teaching.
 
 | Claim | Attribution | Source | Status |
 |-------|-------------|--------|--------|
-| The bare "Ralph" loop (re-run a prompt in `while true`) | Geoffrey Huntley | `https://example.com/SOURCE-huntley-PENDING` | slot — verify |
-| Viral thread on long unattended agent loops | Steinberger | `https://example.com/SOURCE-steinberger-PENDING` | slot — verify |
-| Framing loops inside coding-agent tooling | Boris Cherny | `https://example.com/SOURCE-cherny-PENDING` | slot — verify |
-| Named + defined "loop engineering" | Addy Osmani | `https://example.com/SOURCE-osmani-PENDING` | slot — verify |
-| Governed "Ralph loop++" | Greg Brockman | `https://example.com/SOURCE-brockman-PENDING` | slot — verify |
+| The bare "Ralph" loop (re-run a prompt in `while true`) | Geoffrey Huntley | https://ghuntley.com/ralph/ | primary |
+| Viral thread on long unattended agent loops | Steinberger | https://x.com/steipete/status/2063697162748260627 | primary (X) |
+| Framing loops inside coding-agent tooling | Boris Cherny | https://officechai.com/ai/i-now-just-write-loops-to-prompt-claude-code-claude-code-creator-boris-cherny/ | secondary (OfficeChai) |
+| Named + defined "loop engineering" | Addy Osmani | https://addyosmani.com/blog/loop-engineering/ | primary |
+| Governed "Ralph loop++" | Greg Brockman | https://x.com/gdb/status/2050194039077495089 | primary (X) |
 
 ## Tooling
 
@@ -36,20 +36,20 @@ the shape, not a feature contract — as of June 2026, verify before relying*.
 
 ## Quote-card sources
 
-These rows back the attributed screenshot slots in `assets/quote-cards/`. Each
-slot stays a labeled placeholder until the real screenshot is captured (see the
-per-slot capture checklist in `assets/manifest.json`).
+These rows back the attributed screenshots in `assets/quote-cards/`. Each card in
+the README credits links to its originating post below.
 
 | Slot | Attribution | Source URL | Status |
 |------|-------------|------------|--------|
-| `steinberger` | Steinberger (Ralph loop) | `https://example.com/SOURCE-steinberger-PENDING` | slot — URL pending |
-| `cherny` | Boris Cherny (Claude Code) | `https://example.com/SOURCE-cherny-PENDING` | slot — URL pending |
-| `osmani` | Addy Osmani (loop engineering) | `https://example.com/SOURCE-osmani-PENDING` | slot — URL pending |
-| `huntley` | Geoffrey Huntley (original Ralph) | `https://example.com/SOURCE-huntley-PENDING` | slot — URL pending |
-| `brockman` | Greg Brockman ("Ralph loop++") | `https://example.com/SOURCE-brockman-PENDING` | slot — URL pending |
+| `steinberger` | Steinberger (Ralph loop) | https://x.com/steipete/status/2063697162748260627 | linked |
+| `cherny` | Boris Cherny (Claude Code) | https://officechai.com/ai/i-now-just-write-loops-to-prompt-claude-code-claude-code-creator-boris-cherny/ | linked |
+| `osmani` | Addy Osmani (loop engineering) | https://addyosmani.com/blog/loop-engineering/ | linked |
+| `huntley` | Geoffrey Huntley (original Ralph) | https://ghuntley.com/ralph/ | linked |
+| `brockman` | Greg Brockman ("Ralph loop++") | https://x.com/gdb/status/2050194039077495089 | linked |
 
-> The source URLs above are **placeholders pending Robin's capture pass** and are
-> exempt from external link-checking via `tools/links/allowlist.json`.
+> Each quote card in the README credits links to its source post above. The two
+> X.com URLs are allowlisted for the link-checker in `tools/links/allowlist.json`
+> (x.com returns 403 to automated checkers).
 
 ## Figures and statistics
 

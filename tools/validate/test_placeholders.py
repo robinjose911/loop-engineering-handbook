@@ -2,8 +2,7 @@
 
 Every slot in ``assets/manifest.json`` resolves to a file on disk with non-zero
 dimensions matching the manifest, and every screenshot (quote-card) slot carries
-a source URL + capture checklist + alt text so it is never mistaken for a real
-capture.
+a source URL + alt text and is flagged "real" once its screenshot is captured.
 """
 from __future__ import annotations
 
@@ -63,10 +62,7 @@ def test_slot_image_exists_with_expected_dimensions(slot):
 def test_screenshot_slot_is_attributed(slot):
     assert slot.get("sourceUrl"), f"quote-card '{slot['id']}' missing sourceUrl"
     assert slot.get("alt"), f"quote-card '{slot['id']}' missing alt text"
-    checklist = slot.get("captureChecklist")
-    assert isinstance(checklist, list) and checklist, (
-        f"quote-card '{slot['id']}' missing capture checklist"
-    )
-    assert "SCREENSHOT SLOT" in slot.get("label", ""), (
-        f"quote-card '{slot['id']}' label must mark it a SCREENSHOT SLOT"
+    assert slot.get("label"), f"quote-card '{slot['id']}' missing label"
+    assert slot.get("status") == "real", (
+        f"quote-card '{slot['id']}' should be a real captured screenshot"
     )

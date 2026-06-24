@@ -47,13 +47,15 @@ _Star-history chart appears here after launch — set the owner in `repo.config.
 
 ## Credits
 
-Loop engineering as a discipline grew from a lineage of practitioners. Attributed screenshots of the originating posts are pending capture (see [SOURCES.md](SOURCES.md#quote-card-sources)); until then these are labeled placeholder slots:
+Loop engineering as a discipline grew from a lineage of practitioners:
 
-[![Geoffrey Huntley — the original Ralph loop](assets/quote-cards/huntley.png)](SOURCES.md#quote-card-sources)
-[![Steinberger — long unattended agent loops](assets/quote-cards/steinberger.png)](SOURCES.md#quote-card-sources)
-[![Boris Cherny — loops in Claude Code](assets/quote-cards/cherny.png)](SOURCES.md#quote-card-sources)
-[![Addy Osmani — defining loop engineering](assets/quote-cards/osmani.png)](SOURCES.md#quote-card-sources)
-[![Greg Brockman — the governed Ralph loop++](assets/quote-cards/brockman.png)](SOURCES.md#quote-card-sources)
+[![Geoffrey Huntley — the original Ralph loop](assets/quote-cards/huntley.png)](https://ghuntley.com/ralph/)
+[![Steinberger — long unattended agent loops](assets/quote-cards/steinberger.png)](https://x.com/steipete/status/2063697162748260627)
+[![Boris Cherny — loops in Claude Code](assets/quote-cards/cherny.png)](https://officechai.com/ai/i-now-just-write-loops-to-prompt-claude-code-claude-code-creator-boris-cherny/)
+[![Addy Osmani — defining loop engineering](assets/quote-cards/osmani.png)](https://addyosmani.com/blog/loop-engineering/)
+[![Greg Brockman — the governed Ralph loop++](assets/quote-cards/brockman.png)](https://x.com/gdb/status/2050194039077495089)
+
+_Each card links to its original post. Full attributions: [SOURCES.md](SOURCES.md#quote-card-sources)._
 
 ---
 

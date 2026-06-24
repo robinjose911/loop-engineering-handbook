@@ -50,15 +50,16 @@ def test_banner_uses_configured_tagline():
     assert make_brand.display_title(cfg)  # non-empty title
 
 
-def test_quote_card_slots_stay_attributed_placeholders():
+def test_quote_card_slots_are_real_and_attributed():
     cards = manifest_util.slots_by_kind("quote-card")
     assert len(cards) == 5
     for s in cards:
-        assert s["status"] == "placeholder", f"{s['id']} must remain a placeholder (Decision D)"
-        assert (REPO_ROOT / s["path"]).exists(), f"{s['id']} placeholder image missing"
+        assert s["status"] == "real", f"{s['id']} should be a real captured screenshot"
+        assert (REPO_ROOT / s["path"]).exists(), f"{s['id']} screenshot image missing"
         with Image.open(REPO_ROOT / s["path"]) as img:
             assert img.size == (s["width"], s["height"])
         assert s.get("alt"), f"{s['id']} missing alt text"
+        assert s.get("sourceUrl"), f"{s['id']} missing sourceUrl"
         # the slot has a row in SOURCES.md: the Slot column backticks the id-tail
         # (e.g. `steinberger`), or the row carries the slot's sourceUrl.
         tail = s["id"].split("-")[-1]

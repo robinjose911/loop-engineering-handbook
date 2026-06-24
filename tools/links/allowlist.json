@@ -1,29 +1,21 @@
 {
-  "description": "External URLs exempt from hard link-checking (Stages 0 and 7). Future-dated June-2026 doc URLs and pending quote-card source URLs that may be rate-limited or not yet public. Each entry must carry a reason.",
+  "description": "External URLs exempt from hard link-checking (Stages 0 and 7). X.com post URLs (x.com returns 403 to automated checkers) and the badge image host. Each entry must carry a reason.",
   "allow": [
     {
-      "pattern": "https://example.com/SOURCE-steinberger-PENDING",
-      "reason": "Quote-card source URL pending Robin's capture pass (Decision D)."
+      "pattern": "https://x.com/steipete/status/2063697162748260627",
+      "reason": "Steinberger quote-card source; x.com returns 403 to automated link-checkers."
     },
     {
-      "pattern": "https://example.com/SOURCE-cherny-PENDING",
-      "reason": "Quote-card source URL pending Robin's capture pass (Decision D)."
-    },
-    {
-      "pattern": "https://example.com/SOURCE-osmani-PENDING",
-      "reason": "Quote-card source URL pending Robin's capture pass (Decision D)."
-    },
-    {
-      "pattern": "https://example.com/SOURCE-huntley-PENDING",
-      "reason": "Quote-card source URL pending Robin's capture pass (Decision D)."
-    },
-    {
-      "pattern": "https://example.com/SOURCE-brockman-PENDING",
-      "reason": "Quote-card source URL pending Robin's capture pass (Decision D)."
+      "pattern": "https://x.com/gdb/status/2050194039077495089",
+      "reason": "Brockman quote-card source; x.com returns 403 to automated link-checkers."
     },
     {
       "pattern": "https://img.shields.io/",
       "reason": "Badge image host; rate-limits CI link-checkers, content is non-critical."
+    },
+    {
+      "pattern": "https://www.anthropic.com/claude-code",
+      "reason": "Official Claude Code product page linked from the README; network-free CI."
     }
   ]
 }

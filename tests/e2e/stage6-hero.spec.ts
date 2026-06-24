@@ -40,17 +40,17 @@ test.describe('Stage 6: the README hero', () => {
     }
   });
 
-  test('all five quote-card slots render as attributed placeholders', async ({ page }) => {
+  test('all five quote-cards render and link to their source posts', async ({ page }) => {
     await page.goto('/');
     const cards = page.locator('img[src^="assets/quote-cards/"]');
     await expect(cards).toHaveCount(5);
     for (let i = 0; i < 5; i++) {
       const img = cards.nth(i);
       await expect(img).toBeVisible();
-      // attribution lives in the alt text; the image links to SOURCES
+      // attribution lives in the alt text; the image links to its source post
       expect((await img.getAttribute('alt'))?.length || 0).toBeGreaterThan(3);
       const href = await img.locator('xpath=ancestor::a').first().getAttribute('href');
-      expect(href).toContain('SOURCES');
+      expect(href).toMatch(/^https?:\/\//);
     }
   });
 });
