@@ -10,6 +10,8 @@
 
 The only loop-engineering repo where you can see the **logs**, the **cost**, and the **output** of every example — including work that isn't code.
 
+> **This handbook eats its own dog food.** It was assembled by a governed loop running in [Claude Code](https://www.anthropic.com/claude-code) — the guide, the prompt library, and all seven worked examples were produced and verified loop-by-loop, under the same loop-contract discipline (Done-when, Evidence, If-blocked) the handbook teaches. Loop engineering isn't a thing we *describe* here; it's the thing that *made* the repo.
+
 ## Loop in 30 seconds
 
 A **loop contract** is six fields. Fill them in and you have a governed loop:
