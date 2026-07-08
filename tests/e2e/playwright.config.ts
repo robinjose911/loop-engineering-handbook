@@ -12,7 +12,7 @@ export default defineConfig({
   reporter: process.env.CI ? [['github'], ['list']] : 'list',
   timeout: 30_000,
   use: {
-    baseURL: 'http://localhost:4321',
+    baseURL: 'http://127.0.0.1:4321',
   },
   // globalSetup regenerates placeholders (Python) and builds the preview
   // (build.mjs) before the server boots, so the render-check is self-contained
@@ -21,7 +21,7 @@ export default defineConfig({
   webServer: {
     command: 'node tools/preview/serve.mjs',
     cwd: repoRoot,
-    url: 'http://localhost:4321',
+    url: 'http://127.0.0.1:4321',
     timeout: 120_000,
     reuseExistingServer: !process.env.CI,
     stdout: 'pipe',

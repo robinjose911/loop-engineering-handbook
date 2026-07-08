@@ -9,7 +9,7 @@ import { assertNoBrokenImages } from './helpers/render';
 test.describe('Stage 7: whole-repo integrity', () => {
   test('crawl from README: no broken images, no dead internal links anywhere', async ({ page }) => {
     test.setTimeout(120_000);
-    const origin = 'http://localhost:4321';
+    const origin = 'http://127.0.0.1:4321';
     const seen = new Set<string>();
     const dead: string[] = [];
     const queue = ['/'];

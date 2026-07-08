@@ -90,6 +90,11 @@ const server = http.createServer((req, res) => {
   }
 });
 
-server.listen(PORT, () => {
-  console.log(`[preview] serving ${DIST} on http://localhost:${PORT}`);
+// Bind explicitly to the IPv4 loopback: listening with no host binds the unspecified
+// address, which some CI runners (GitHub-hosted Ubuntu included) resolve inconsistently
+// between IPv4 and IPv6, leaving a client that connects via 127.0.0.1 unable to reach a
+// server that only ended up listening on the IPv6 side. Playwright's webServer.url must
+// match (127.0.0.1, not localhost) so there's no DNS-order ambiguity on either end.
+server.listen(PORT, '127.0.0.1', () => {
+  console.log(`[preview] serving ${DIST} on http://127.0.0.1:${PORT}`);
 });

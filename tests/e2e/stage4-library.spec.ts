@@ -21,7 +21,7 @@ test.describe('Stage 4: the prompt library', () => {
 
   test('catalog.json and llms.txt are served and catalog parses in-browser', async ({ page }) => {
     await page.goto('/'); // establish the localhost origin for the in-browser fetch
-    const catResp = await page.request.get('http://localhost:4321/library/catalog.json');
+    const catResp = await page.request.get('http://127.0.0.1:4321/library/catalog.json');
     expect(catResp.ok()).toBeTruthy();
     const parsed = await page.evaluate(async () => {
       const r = await fetch('/library/catalog.json');
@@ -30,7 +30,7 @@ test.describe('Stage 4: the prompt library', () => {
     expect(Array.isArray(parsed.cards)).toBeTruthy();
     expect(parsed.cards.length).toBe(parsed.count);
 
-    const llmsResp = await page.request.get('http://localhost:4321/library/llms.txt');
+    const llmsResp = await page.request.get('http://127.0.0.1:4321/library/llms.txt');
     expect(llmsResp.ok()).toBeTruthy();
     expect((await llmsResp.text()).length).toBeGreaterThan(100);
   });

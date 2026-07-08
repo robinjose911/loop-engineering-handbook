@@ -53,7 +53,7 @@ test.describe('Stage 5: the worked examples', () => {
       // the .xlsx link, where applicable, resolves to a real workbook
       const xlsx = (XLSX as Record<string, string>)[slug];
       if (xlsx) {
-        const resp = await page.request.get(`http://localhost:4321/examples/${slug}/${xlsx}`);
+        const resp = await page.request.get(`http://127.0.0.1:4321/examples/${slug}/${xlsx}`);
         expect(resp.ok()).toBeTruthy();
         const buf = await resp.body();
         expect(buf[0]).toBe(0x50); // PK zip magic
