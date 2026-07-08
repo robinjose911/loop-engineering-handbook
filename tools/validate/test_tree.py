@@ -71,7 +71,10 @@ def test_build_context_is_git_ignored_when_git_available():
     """Once git is initialized, CLAUDE.md and samples/ must be ignored."""
     if shutil.which("git") is None or not (REPO_ROOT / ".git").exists():
         pytest.skip("git not initialized yet; covered by the .gitignore string check")
-    for target in ("CLAUDE.md", "samples"):
+    # "samples/" needs the trailing slash: .gitignore's "/samples/" is a directory-only pattern,
+    # and on a fresh checkout the directory doesn't exist on disk (it's never committed), so
+    # `git check-ignore samples` can't confirm it would resolve to a directory and won't match.
+    for target in ("CLAUDE.md", "samples/"):
         result = subprocess.run(
             ["git", "check-ignore", target],
             cwd=REPO_ROOT,

@@ -32,4 +32,7 @@ venv/
 
 # Build / temp
 *.log
+# ...except the example receipts: repro-gate.log is committed evidence (see examples/*/README.md),
+# not a scratch log, so the blanket *.log rule above must not swallow it.
+!examples/**/repro-gate.log
 .tmp/

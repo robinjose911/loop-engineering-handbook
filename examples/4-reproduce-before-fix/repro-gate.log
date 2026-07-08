@@ -1,0 +1,9 @@
+# Reproduction gate log (GridDesk regression)
+
+# The gate stays CLOSED (no source edits allowed) until a test is RELIABLY RED.
+
+attempt 1: ran 10x, 3/10 failed -> FLAKY (not reliable). GATE CLOSED.
+attempt 2: ran 10x, 5/10 failed -> FLAKY (not reliable). GATE CLOSED.
+attempt 3: ran 10x, 6/10 failed -> FLAKY (not reliable). GATE CLOSED.
+attempt 4: ran 10x, 8/10 failed -> FLAKY (not reliable). GATE CLOSED.
+attempt 5: ran 10x, 10/10 failed -> RELIABLY RED. GATE OPEN. source edits permitted.
