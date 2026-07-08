@@ -16,6 +16,14 @@
     {
       "pattern": "https://www.anthropic.com/claude-code",
       "reason": "Official Claude Code product page linked from the README; network-free CI."
+    },
+    {
+      "pattern": "https://github.com/robinjose911/loop-engineering-handbook/actions/workflows/ci.yml/badge.svg",
+      "reason": "Live GitHub Actions CI badge; network-free CI."
+    },
+    {
+      "pattern": "https://robinjose911.github.io/loop-engineering-handbook/",
+      "reason": "GitHub Pages docs preview linked from the README's Docs badge; network-free CI."
     }
   ]
 }

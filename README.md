@@ -2,7 +2,7 @@
 
 ![Loop Engineering Handbook banner](assets/banner.png)
 
-[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) [![CI](https://img.shields.io/badge/ci-validate%20%2B%20link--check%20%2B%20playwright-brightgreen.svg)](.github/workflows/ci.yml) [![7 worked examples](https://img.shields.io/badge/worked%20examples-7-orange.svg)](examples/README.md)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) [![CI](https://github.com/robinjose911/loop-engineering-handbook/actions/workflows/ci.yml/badge.svg)](.github/workflows/ci.yml) [![Docs: online](https://img.shields.io/badge/docs-online-brightgreen.svg)](https://robinjose911.github.io/loop-engineering-handbook/) [![8 chapters](https://img.shields.io/badge/chapters-8-orange.svg)](docs/README.md) [![17 loops in the library](https://img.shields.io/badge/library-17%20loops-9cf.svg)](library/README.md) [![7 worked examples](https://img.shields.io/badge/worked%20examples-7-orange.svg)](examples/README.md)
 
 > Loop engineering is the practice of running an AI coding agent in a **governed, verifiable loop** until a clearly defined goal is met.
 

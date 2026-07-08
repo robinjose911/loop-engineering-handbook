@@ -6,7 +6,10 @@
   "definition": "Loop engineering is the practice of running an AI coding agent in a governed, verifiable loop until a clearly defined goal is met.",
   "badges": [
     { "label": "license", "alt": "License: MIT", "href": "LICENSE", "img": "https://img.shields.io/badge/license-MIT-blue.svg" },
-    { "label": "ci", "alt": "CI", "href": ".github/workflows/ci.yml", "img": "https://img.shields.io/badge/ci-validate%20%2B%20link--check%20%2B%20playwright-brightgreen.svg" },
+    { "label": "ci", "alt": "CI", "href": ".github/workflows/ci.yml", "img": "https://github.com/robinjose911/loop-engineering-handbook/actions/workflows/ci.yml/badge.svg" },
+    { "label": "docs", "alt": "Docs: online", "href": "https://robinjose911.github.io/loop-engineering-handbook/", "img": "https://img.shields.io/badge/docs-online-brightgreen.svg" },
+    { "label": "chapters", "alt": "8 chapters", "href": "docs/README.md", "img": "https://img.shields.io/badge/chapters-8-orange.svg" },
+    { "label": "library", "alt": "17 loops in the library", "href": "library/README.md", "img": "https://img.shields.io/badge/library-17%20loops-9cf.svg" },
     { "label": "examples", "alt": "7 worked examples", "href": "examples/README.md", "img": "https://img.shields.io/badge/worked%20examples-7-orange.svg" }
   ],
   "buttons": [
